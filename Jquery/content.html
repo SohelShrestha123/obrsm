@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <script src="jquery.js"></script>
+    <script>
+                  $(document).ready(function(){
+                  $("div").click(function(){
+                    alert("You have clicked");
+                  });
+                  $("#clone").click(function(){
+                    alert("You have clicked paragraph 1");
+                  });
+                  $("#box").click(function(){
+                    alert("You have clicked paragraph 2");
+                  });
+                });
+    </script>
+</head>
+<body>
+    <div>
+        <h1>The dialouge box will appear</h1>
+    </div>
+
+    <p id="clone">Click</p>
+    <p id="box">This is my content</p>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+This is an Ajax.
+It is not an programming langauge.
+It does not required sql query.
+AJAX = Asynchronous JavaScript AndXML.
+ AJAX is not a programming language. 
+ AJAX just uses a combination of: 
+ 1. A browser built-in XMLHttpRequest object (to request data from a web server) 
+ 2. JavaScript and HTML DOM (to display or use the data) AJAX allows web pages to be updated asynchronously by.

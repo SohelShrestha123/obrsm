@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <link rel="stylesheet" href="/jquery-ui-1.13.2.custom/jquery-ui.css">
+
+    <style>
+  li{
+    display: inline-block;
+    padding:20px;
+    border: 1px solid black;
+    cursor:pointer;
+  }
+  .ui-selected{
+    background-color: blueviolet;
+    color:cadetblue;
+
+  }
+  .ui-selecting{
+    background-color: greenyellow;
+    color:crimson;
+
+  }
+</style>
+    
+</head>
+<body>
+    <script src="jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <form id="log" runat="server">
+        <ul id="choose">
+            <li >Dell</li>
+            <li >Hp</li>
+            <li >Lenovo</li>
+            <li >Acer</li>
+        </ul>
+        You selected: <div id="out"></div>
+    </form>
+    <script>
+       $(document).ready(function(){
+        $('#choose').selectable({
+            stop : function(){
+                var result='';
+                $('.ui-selected').each(function(){
+                      result+=$(this).text()+'<br/>';
+                });
+                $('#out').html();
+            }
+        });
+       });
+    </script>
+</body>
+</html>

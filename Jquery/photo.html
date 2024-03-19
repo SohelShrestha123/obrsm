@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#display").click(function(){
+        $("img").show();
+    });
+
+    $("#undisplay").click(function(){
+        $("img").hide();
+    });
+        });
+    </script>
+</head>
+<body>
+    <img src="R.jpg" width="100px" height="100px"><br>
+    <button id="display">Show</button>
+    <button id="undisplay">Hide</button>
+</body>
+</html>

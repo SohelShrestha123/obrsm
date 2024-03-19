@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize</title>
+    <link rel="stylesheet" href="/jquery-ui-1.13.2.custom/jquery-ui.css">
+
+    <style>
+   body{
+    background:#ccc;
+    font-family: sans-serif;
+    line-height: 20px;
+    }
+
+    .box{
+        max-width: 600px;
+        margin: 50px auto;
+    }
+
+    #resize{
+        width: 300px;
+        height:auto;
+        overflow: hidden;
+    }
+
+    #resize h3{
+        text-align:center;
+        margin:0;
+        background: #009999;
+        padding: 5px;
+        margin_top:0;
+    }
+
+    #resize p{
+        padding:0px 10px;
+background-color: blue;
+    }
+</style>
+    
+</head>
+<body>
+    <script src="jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <div class="box">
+        <div id="resize" claas="ui-widget-content">
+             <h3>Resize this content</h3>
+             <p>Welcome to Jquery</p>
+        </div>
+    </div>
+    <script>
+       $(function(){
+            $('#resize').resizable();
+        });
+    </script>
+</body>
+</html>
